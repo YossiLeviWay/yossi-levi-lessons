@@ -1,5 +1,6 @@
 window.LESSONS=[
  {id:'inclusion',title:'אותה כיתה, משימה אחרת',description:'שילוב והכלה, תמיכה שמקדמת עצמאות ובדיקת הלמידה.',details:'22 שקופיות · כ־3 שעות · פאנל מרצה משולב',cover:'assets/inclusion-cover.png',url:'lessons/inclusion/',worksheet:'worksheets/inclusion.pdf'},
  {id:'return',title:'חוזרות לראות מחדש',description:'חזרה מהחופש, התבוננות בסיטואציות וחשיבה על העזרה שאנחנו נותנות.',details:'20 שקופיות · המצגת הקיימת',cover:'lessons/return/assets/support.png',url:'lessons/return/'},
- {id:'behavior-learning',title:'CBT בכיתה',description:'שלושה סיפורי מקור, דיון, תצפית ותוכנית תמיכה חינוכית שאפשר לבדוק.',details:'43 שקופיות · 3 שעות · שאלות מנחות ודף עבודה לקבוצות',cover:'lessons/behavior-learning/assets/movement.png',url:'lessons/behavior-learning/',worksheet:'worksheets/behavior-learning.pdf'}
+ {id:'behavior-learning',title:'CBT בכיתה',description:'שלושה סיפורי מקור, דיון, תצפית ותוכנית תמיכה חינוכית שאפשר לבדוק.',details:'43 שקופיות · 3 שעות · שאלות מנחות ודף עבודה לקבוצות',cover:'lessons/behavior-learning/assets/movement.png',url:'lessons/behavior-learning/',worksheet:'worksheets/behavior-learning.pdf'},
+ {id:'independence-steps',title:'מדרגות לעצמאות',description:'מה הילד לומד מהתגובות שלנו ומההצלחות שלו: תשומת לב לפעולה הרצויה, הסיפור של יובל, סולם של חמש מדרגות ובדיקה בסימון ✓/✗.',details:'23 שקופיות · כ־3 שעות · עבודה בזוגות ובקבוצות, שני סרטונים ודף עבודה',cover:'assets/independence-steps-cover.png',url:'lessons/independence-steps/',worksheet:'worksheets/independence-steps-v2.pdf'}
 ];

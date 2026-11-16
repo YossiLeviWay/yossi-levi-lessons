@@ -1,14 +1,14 @@
 window.YOSSI_DECK={
   "title": "לשחרר את השליטה",
   "subtitle": "לשלב את הילד, ולתת לו לעשות לבד",
-  "revision": "2026-11-10-content-v4",
+  "revision": "2026-11-16-content-v5",
   "duration_minutes": 180,
   "teaching_minutes": 165,
   "break_minutes": 15,
   "break": {
-    "after_slide": "13",
-    "start_minute": 85,
-    "end_minute": 100,
+    "after_slide": "14",
+    "start_minute": 95,
+    "end_minute": 110,
     "text": "הפסקה · 15 דקות · חוזרות עם ילד אחד בראש"
   },
   "slides": [
@@ -33,7 +33,7 @@ window.YOSSI_DECK={
       "notes": [
         "פתח בתמונה בלי להסביר אותה.",
         "אמור במשפט אחד: היום לא מוסיפים עוד כלי. היום לומדים לזוז אחורה.",
-        "אל תתעכב. בדקה 3 עוברים לכתיבה."
+        "אל תתעכב. בדקה 3 עוברים לסרטון."
       ],
       "questions": [
         {
@@ -41,6 +41,7 @@ window.YOSSI_DECK={
           "answer": "הקשב לתיאור פשוט: הסייעת צמודה לילד, והילדים משחקים רחוק ממנו. אל תאשר עדיין פרשנות. נחזור לתמונה בסוף."
         }
       ],
+      "video": null,
       "minutes": 3,
       "start_minute": 0,
       "end_minute": 3,
@@ -49,6 +50,57 @@ window.YOSSI_DECK={
     },
     {
       "id": "02",
+      "title": "סרטון פתיחה: Piper",
+      "subtitle": null,
+      "body": [
+        "סרט קצר של פיקסאר (2016), כ־6 דקות, בלי מילים."
+      ],
+      "question": "מתי קשה לך לא לעזור, כמו האמא בסרט?",
+      "bottom": "האמא לא מצילה. היא נשארת קרוב ונותנת לגוזל ללמוד.",
+      "kind": "text",
+      "section": "פתיחה · סרטון",
+      "visual": null,
+      "image": null,
+      "notes": [
+        "מליאה בלבד. אין שיחה צדדית בין משתתפות.",
+        "הצג את הסרט, כ־6 דקות. אם הסרט המלא זמין ב־Disney+, השתמש בו. על השקופית יש קטע רשמי קצר מערוץ Disney UK.",
+        "אחרי הצפייה שאל במליאה רק את השאלה שעל השקופית.",
+        "המוסר: כשאני זזה אחורה, הילד מוצא את הדרך. הוא לומד גם מחברים, כמו הגוזל שלומד מהסרטנים הקטנים.",
+        "סיכום הסרט לפי המקור הרשמי: https://www.pixar.com/piper"
+      ],
+      "questions": [
+        {
+          "question": "מתי קשה לך לא לעזור, כמו האמא בסרט?",
+          "answer": "כשהילד מתוסכל ובוכה\nכשאני מפחדת שייפגע או ייכשל מול כולם\nכשאין זמן והמורה ממהרת\nכשקל לי יותר לעשות במקומו\nהאמא לא מצילה. היא נשארת קרוב ונותנת לגוזל ללמוד."
+        }
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=_LuQFp1Lrfo",
+        "embed": "https://www.youtube-nocookie.com/embed/_LuQFp1Lrfo",
+        "button": "לצפייה בקטע הרשמי · Disney UK",
+        "note": "קטע רשמי קצר (לא הסרט המלא). הסרט המלא: Disney+.",
+        "source": "https://www.pixar.com/piper",
+        "title": "PIPER | First Look | Official Disney UK"
+      },
+      "minutes": 10,
+      "start_minute": 3,
+      "end_minute": 13,
+      "source": "source02",
+      "activity": {
+        "label": "מליאה · 10 דק׳",
+        "group": "מליאה",
+        "minutes": 10,
+        "materials": null,
+        "steps": [
+          "צופים בסרט (כ־6 דק׳). אם אין את הסרט המלא, צופים בקטע הרשמי שעל השקופית.",
+          "מליאה: השאלה שעל השקופית."
+        ],
+        "cards": []
+      },
+      "extra": []
+    },
+    {
+      "id": "03",
       "title": "מה הילד שלך עושה לבד?",
       "subtitle": null,
       "body": [
@@ -77,10 +129,11 @@ window.YOSSI_DECK={
           "answer": "זה נכון. לשחרר לוקח יותר זמן בהתחלה. נראה היום איך עושים את זה לאט, בצעדים קטנים."
         }
       ],
+      "video": null,
       "minutes": 8,
-      "start_minute": 3,
-      "end_minute": 11,
-      "source": "source02",
+      "start_minute": 13,
+      "end_minute": 21,
+      "source": "source03",
       "activity": {
         "label": "כתיבה אישית ומליאה · 6 דק׳ · חומרים: דף העבודה, עמוד 3, שאלה 1",
         "group": "כתיבה אישית ומליאה",
@@ -95,7 +148,7 @@ window.YOSSI_DECK={
       "extra": []
     },
     {
-      "id": "03",
+      "id": "04",
       "title": "אחרי CBT: הרבה שליטה אצלנו",
       "subtitle": null,
       "body": [
@@ -132,10 +185,11 @@ window.YOSSI_DECK={
           "answer": "תשובות צפויות: פחד שייכשל או ייפגע, המורה מצפה שהכול ייעשה, זה מהיר יותר, אנחנו מרגישות נחוצות. כל התשובות לגיטימיות."
         }
       ],
+      "video": null,
       "minutes": 6,
-      "start_minute": 11,
-      "end_minute": 17,
-      "source": "source03",
+      "start_minute": 21,
+      "end_minute": 27,
+      "source": "source04",
       "activity": {
         "label": "מליאה · 4 דק׳",
         "group": "מליאה",
@@ -150,7 +204,7 @@ window.YOSSI_DECK={
       "extra": []
     },
     {
-      "id": "04",
+      "id": "05",
       "title": "המטרה של היום",
       "subtitle": null,
       "body": [
@@ -183,10 +237,11 @@ window.YOSSI_DECK={
           "answer": "הוא ינסה בעצמו, יפנה יותר לילדים ולמורה, ירגיש שהוא מסוגל. בהתחלה אולי יתקשה או יכעס. זה חלק מהתהליך."
         }
       ],
+      "video": null,
       "minutes": 4,
-      "start_minute": 17,
-      "end_minute": 21,
-      "source": "source02",
+      "start_minute": 27,
+      "end_minute": 31,
+      "source": "source03",
       "activity": {
         "label": "מליאה · 3 דק׳",
         "group": "מליאה",
@@ -201,7 +256,7 @@ window.YOSSI_DECK={
       "extra": []
     },
     {
-      "id": "05",
+      "id": "06",
       "title": "כשאני עושה בשבילו",
       "subtitle": null,
       "body": [
@@ -224,7 +279,7 @@ window.YOSSI_DECK={
       "notes": [
         "קרא את הדוגמה פעם אחת, לאט.",
         "הכוונה של הסייעת טובה. אל תחפש אשמה.",
-        "אל תגלה עדיין את היום האחר (שקופית 6)."
+        "אל תגלה עדיין את היום האחר (שקופית 7)."
       ],
       "questions": [
         {
@@ -236,10 +291,11 @@ window.YOSSI_DECK={
           "answer": "נכון. לא מחפשים אשמה. מסתכלים מה קרה בפועל לילד. מיד נראה את אותו רגע אחרת."
         }
       ],
+      "video": null,
       "minutes": 8,
-      "start_minute": 21,
-      "end_minute": 29,
-      "source": "source05",
+      "start_minute": 31,
+      "end_minute": 39,
+      "source": "source06",
       "activity": {
         "label": "כתיבה אישית ומליאה · 5 דק׳ · חומרים: דף ועט",
         "group": "כתיבה אישית ומליאה",
@@ -254,7 +310,7 @@ window.YOSSI_DECK={
       "extra": []
     },
     {
-      "id": "06",
+      "id": "07",
       "title": "אותו רגע, אחרת",
       "subtitle": null,
       "body": [
@@ -288,10 +344,11 @@ window.YOSSI_DECK={
           "answer": "זה קורה. מתקרבות קצת, ומנסות שוב. בדיוק כך עבדה היועצת עם יובל. נראה עכשיו."
         }
       ],
+      "video": null,
       "minutes": 7,
-      "start_minute": 29,
-      "end_minute": 36,
-      "source": "source05",
+      "start_minute": 39,
+      "end_minute": 46,
+      "source": "source06",
       "activity": {
         "label": "מליאה · 5 דק׳",
         "group": "מליאה",
@@ -306,7 +363,7 @@ window.YOSSI_DECK={
       "extra": []
     },
     {
-      "id": "07",
+      "id": "08",
       "title": "הסיפור של יובל: הבעיה",
       "subtitle": null,
       "body": [
@@ -323,7 +380,7 @@ window.YOSSI_DECK={
       "image": null,
       "notes": [
         "זה סיפור אמיתי מהספר. הסיפור המלא נמצא בעמוד 1 בדף העבודה.",
-        "בשקופיות 7 עד 12 עוברים על הסיפור שלב אחרי שלב, לפי התרשים בעמוד 1.",
+        "בשקופיות 8 עד 13 עוברים על הסיפור שלב אחרי שלב, לפי התרשים בעמוד 1.",
         "אל תרחיב על האבחנה של יובל. ההתמקדות היא בתלות ובעצמאות."
       ],
       "questions": [
@@ -336,10 +393,11 @@ window.YOSSI_DECK={
           "answer": "מצוין. בקשי ממנה לזכור את הילד הזה. אחרי ההפסקה נבנה לו תכנית."
         }
       ],
+      "video": null,
       "minutes": 8,
-      "start_minute": 36,
-      "end_minute": 44,
-      "source": "source07",
+      "start_minute": 46,
+      "end_minute": 54,
+      "source": "source08",
       "activity": {
         "label": "כתיבה אישית ומליאה · 5 דק׳ · חומרים: דף העבודה, עמוד 1, תיבה 1",
         "group": "כתיבה אישית ומליאה",
@@ -354,7 +412,7 @@ window.YOSSI_DECK={
       "extra": []
     },
     {
-      "id": "08",
+      "id": "09",
       "title": "שלב 2: תצפית ומידע",
       "subtitle": null,
       "body": [
@@ -383,10 +441,11 @@ window.YOSSI_DECK={
           "answer": "את רואה את הילד כל יום. התצפית שלך חשובה מאוד. אפשר להתחיל ממנה ולספר למורה."
         }
       ],
+      "video": null,
       "minutes": 6,
-      "start_minute": 44,
-      "end_minute": 50,
-      "source": "source07",
+      "start_minute": 54,
+      "end_minute": 60,
+      "source": "source08",
       "activity": {
         "label": "מליאה · 5 דק׳",
         "group": "מליאה",
@@ -401,7 +460,7 @@ window.YOSSI_DECK={
       "extra": []
     },
     {
-      "id": "09",
+      "id": "10",
       "title": "שלב 3: מטרות ברורות",
       "subtitle": null,
       "body": [
@@ -434,10 +493,11 @@ window.YOSSI_DECK={
           "answer": "מטרות שאפשר לראות: יוציא את המחברת לבד, יבקש מחבר עפרון, ילך לבד לברז, יתחיל לכתוב לבד. לא ״יהיה עצמאי״."
         }
       ],
+      "video": null,
       "minutes": 7,
-      "start_minute": 50,
-      "end_minute": 57,
-      "source": "source07",
+      "start_minute": 60,
+      "end_minute": 67,
+      "source": "source08",
       "activity": {
         "label": "כתיבה אישית ומליאה · 5 דק׳ · חומרים: דף ועט",
         "group": "כתיבה אישית ומליאה",
@@ -452,7 +512,7 @@ window.YOSSI_DECK={
       "extra": []
     },
     {
-      "id": "10",
+      "id": "11",
       "title": "שלב 4: צעדים קטנים באוטובוס",
       "subtitle": null,
       "body": [
@@ -496,10 +556,11 @@ window.YOSSI_DECK={
           "answer": "גם יובל רץ חזרה ליועצת אחרי כמה שניות. היא לא כעסה. נראה בשקופית הבאה מה היא עשתה."
         }
       ],
+      "video": null,
       "minutes": 8,
-      "start_minute": 57,
-      "end_minute": 65,
-      "source": "source07",
+      "start_minute": 67,
+      "end_minute": 75,
+      "source": "source08",
       "activity": {
         "label": "מליאה · 5 דק׳",
         "group": "מליאה",
@@ -514,7 +575,7 @@ window.YOSSI_DECK={
       "extra": []
     },
     {
-      "id": "11",
+      "id": "12",
       "title": "שלב 5: חיזוק על כל הצלחה קטנה",
       "subtitle": null,
       "body": [
@@ -540,10 +601,11 @@ window.YOSSI_DECK={
           "answer": "משפט שאומר מה הילד עשה: ״פתחת לבד את התיק.״ ״ביקשת בעצמך.״ ״התחלת לכתוב לבד.״ עדיף על ״כל הכבוד״ כללי."
         }
       ],
+      "video": null,
       "minutes": 7,
-      "start_minute": 65,
-      "end_minute": 72,
-      "source": "source07",
+      "start_minute": 75,
+      "end_minute": 82,
+      "source": "source08",
       "activity": {
         "label": "כתיבה אישית ומליאה · 5 דק׳ · חומרים: דף ועט",
         "group": "כתיבה אישית ומליאה",
@@ -558,7 +620,7 @@ window.YOSSI_DECK={
       "extra": []
     },
     {
-      "id": "12",
+      "id": "13",
       "title": "הסוף: יובל ״ברח״ לה",
       "subtitle": null,
       "body": [
@@ -587,10 +649,11 @@ window.YOSSI_DECK={
           "answer": "זה טבעי. לשחרר מעורר גם פחד. בגלל זה משחררים לאט, כדי שגם אנחנו נתרגל."
         }
       ],
+      "video": null,
       "minutes": 8,
-      "start_minute": 72,
-      "end_minute": 80,
-      "source": "source07",
+      "start_minute": 82,
+      "end_minute": 90,
+      "source": "source08",
       "activity": {
         "label": "כתיבה אישית ומליאה · 6 דק׳ · חומרים: דף העבודה, עמוד 1",
         "group": "כתיבה אישית ומליאה",
@@ -605,7 +668,7 @@ window.YOSSI_DECK={
       "extra": []
     },
     {
-      "id": "13",
+      "id": "14",
       "title": "חמשת השלבים",
       "subtitle": null,
       "body": [
@@ -645,14 +708,15 @@ window.YOSSI_DECK={
           "answer": "אל תאסוף תשובות עכשיו. כל אחת בוחרת ילד בשקט. אפשר את הילד מהשאלה בתחילת השיעור."
         }
       ],
+      "video": null,
       "minutes": 5,
-      "start_minute": 80,
-      "end_minute": 85,
-      "source": "source13",
+      "start_minute": 90,
+      "end_minute": 95,
+      "source": "source14",
       "extra": []
     },
     {
-      "id": "14",
+      "id": "15",
       "title": "״בוא תראה לי איך שוחים״",
       "subtitle": null,
       "body": [
@@ -680,10 +744,11 @@ window.YOSSI_DECK={
           "answer": "עדיף לבקש עזרה במשהו שבאמת קשה לך או שבאמת אינך יודעת. הילד מרגיש מתי הבקשה אמיתית."
         }
       ],
+      "video": null,
       "minutes": 8,
-      "start_minute": 100,
-      "end_minute": 108,
-      "source": "source14",
+      "start_minute": 110,
+      "end_minute": 118,
+      "source": "source15",
       "activity": {
         "label": "מליאה · 5 דק׳",
         "group": "מליאה",
@@ -698,7 +763,7 @@ window.YOSSI_DECK={
       "extra": []
     },
     {
-      "id": "15",
+      "id": "16",
       "title": "התכנית שלי לילד אחד",
       "subtitle": null,
       "body": [
@@ -745,10 +810,11 @@ window.YOSSI_DECK={
           "answer": "חזרי לשאלה מתחילת השיעור: מה הילד יכול לעשות לבד, ואת עדיין עושה בשבילו? זו התשובה."
         }
       ],
+      "video": null,
       "minutes": 20,
-      "start_minute": 108,
-      "end_minute": 128,
-      "source": "source13",
+      "start_minute": 118,
+      "end_minute": 138,
+      "source": "source14",
       "activity": {
         "label": "כתיבה אישית ומליאה · 20 דק׳ · חומרים: דף העבודה, עמוד 2",
         "group": "כתיבה אישית ומליאה",
@@ -774,7 +840,7 @@ window.YOSSI_DECK={
       ]
     },
     {
-      "id": "16",
+      "id": "17",
       "title": "מתי לא משחררים",
       "subtitle": null,
       "body": [
@@ -807,10 +873,11 @@ window.YOSSI_DECK={
           "answer": "מכבדות. אפשר להציע למורה ניסיון קצר. אם היא אומרת ״לא״, מקבלות. לא עושות את זה מאחורי הגב שלה."
         }
       ],
-      "minutes": 7,
-      "start_minute": 128,
-      "end_minute": 135,
-      "source": "source16",
+      "video": null,
+      "minutes": 5,
+      "start_minute": 138,
+      "end_minute": 143,
+      "source": "source17",
       "activity": {
         "label": "מליאה · 5 דק׳",
         "group": "מליאה",
@@ -825,7 +892,7 @@ window.YOSSI_DECK={
       "extra": []
     },
     {
-      "id": "17",
+      "id": "18",
       "title": "אני והשליטה",
       "subtitle": null,
       "body": [
@@ -852,10 +919,11 @@ window.YOSSI_DECK={
           "answer": "בגלל אכפתיות, לחץ של זמן, פחד שייכשל, או ציפייה של המורה. לזהות את הסיבה עוזר לשחרר."
         }
       ],
+      "video": null,
       "minutes": 13,
-      "start_minute": 135,
-      "end_minute": 148,
-      "source": "source02",
+      "start_minute": 143,
+      "end_minute": 156,
+      "source": "source03",
       "activity": {
         "label": "כתיבה אישית ומליאה · 13 דק׳ · חומרים: דף העבודה, עמוד 3",
         "group": "כתיבה אישית ומליאה",
@@ -870,7 +938,7 @@ window.YOSSI_DECK={
       "extra": []
     },
     {
-      "id": "18",
+      "id": "19",
       "title": "משפט אחד למורה",
       "subtitle": null,
       "body": [
@@ -892,10 +960,11 @@ window.YOSSI_DECK={
           "answer": "לדוגמה: ״ראיתי שהוא מחכה שאכתוב לו. אני מציעה לנסות שהוא יתחיל לבד. נבדוק עד סוף השבוע.״ אם המורה אומרת ״לא״, שואלות מה כן אפשר."
         }
       ],
-      "minutes": 8,
-      "start_minute": 148,
-      "end_minute": 156,
-      "source": "source18",
+      "video": null,
+      "minutes": 6,
+      "start_minute": 156,
+      "end_minute": 162,
+      "source": "source19",
       "activity": {
         "label": "כתיבה אישית ומליאה · 6 דק׳ · חומרים: דף ועט",
         "group": "כתיבה אישית ומליאה",
@@ -910,7 +979,7 @@ window.YOSSI_DECK={
       "extra": []
     },
     {
-      "id": "19",
+      "id": "20",
       "title": "מה אשחרר השבוע?",
       "subtitle": null,
       "body": [
@@ -934,10 +1003,11 @@ window.YOSSI_DECK={
           "answer": "עזור לדייק. לא ״אתן לו להיות עצמאי״, אלא ״אתן לו לפתוח לבד את התיק בבוקר״."
         }
       ],
-      "minutes": 14,
-      "start_minute": 156,
-      "end_minute": 170,
-      "source": "source02",
+      "video": null,
+      "minutes": 12,
+      "start_minute": 162,
+      "end_minute": 174,
+      "source": "source03",
       "activity": {
         "label": "כתיבה אישית ומליאה · 12 דק׳ · חומרים: דף העבודה, עמוד 3, שאלה 6",
         "group": "כתיבה אישית ומליאה",
@@ -952,7 +1022,7 @@ window.YOSSI_DECK={
       "extra": []
     },
     {
-      "id": "20",
+      "id": "21",
       "title": "לשלב את הילד, ולתת לו לעשות לבד",
       "subtitle": null,
       "body": [
@@ -981,10 +1051,11 @@ window.YOSSI_DECK={
           "answer": "הקשב למשפטים כמו: לשחרר לאט, צעד קטן אחד, לחזק כל הצלחה, לבקש מהילד עזרה, לספר למורה."
         }
       ],
-      "minutes": 10,
-      "start_minute": 170,
+      "video": null,
+      "minutes": 6,
+      "start_minute": 174,
       "end_minute": 180,
-      "source": "source02",
+      "source": "source03",
       "activity": {
         "label": "מליאה · 6 דק׳",
         "group": "מליאה",
@@ -1005,34 +1076,38 @@ window.YOSSI_DECK={
       "url": null
     },
     "source02": {
-      "label": "—",
+      "label": "מקור רשמי: pixar.com/piper · הקטע: Disney UK",
       "url": null
     },
     "source03": {
+      "label": "—",
+      "url": null
+    },
+    "source04": {
       "label": "המשך לשיעורים על CBT",
       "url": null
     },
-    "source05": {
+    "source06": {
       "label": "דוגמה לתרגול",
       "url": null
     },
-    "source07": {
+    "source08": {
       "label": "מתוך ספר על CBT בחינוך · הסיפור של יובל",
       "url": null
     },
-    "source13": {
+    "source14": {
       "label": "לפי דרך העבודה בסיפור של יובל",
       "url": null
     },
-    "source14": {
+    "source15": {
       "label": "דוגמה מהשטח",
       "url": null
     },
-    "source16": {
+    "source17": {
       "label": "עקרונות בטיחות של השיעור · תיאום עם המורה והצוות",
       "url": null
     },
-    "source18": {
+    "source19": {
       "label": "מבנה מוכר מהשיעור הקודם",
       "url": null
     }

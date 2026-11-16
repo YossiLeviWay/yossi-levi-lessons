@@ -47,3 +47,9 @@
 .has-video .activity{margin-top:0}
 .has-video .discussion{margin-top:14px;padding-top:12px}
 @media (max-width:900px){.has-video .slide-body{grid-template-columns:minmax(0,1fr)}.has-video .video-embed{max-width:100%}}
+
+/* v7: slide 16 — keep the question above the toolbar (compact example in two columns) */
+#slide-16 .extra{display:grid;grid-template-columns:1fr 1fr;column-gap:2rem;row-gap:.2rem;padding-block:.6rem}
+#slide-16 .extra h2{grid-column:1/-1;margin:0 0 .2rem}
+#slide-16 .extra p{margin:0}
+#slide-16 .body-copy p{margin-block:.25rem}

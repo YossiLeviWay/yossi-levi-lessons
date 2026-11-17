@@ -84,3 +84,59 @@ nav #four-voices-open svg{display:block;flex:0 0 auto}
 @media print{
   #four-voices-open{display:none!important}
 }
+
+#four-voices .fv-bar{flex-wrap:wrap}
+#four-voices #fv-tools{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+#four-voices .fv-tool{background:#eef4ef;color:#29332e;border:2px solid #bbd3c5;border-radius:999px;padding:8px 12px;min-height:44px;font-size:17px}
+#four-voices .fv-marker[aria-pressed="true"]{background:#ffe566;border-color:#e0c43a;color:#1c2622}
+#four-voices .fv-colors{display:none;align-items:center;gap:4px}
+#four-voices.fv-marking .fv-colors{display:inline-flex}
+#four-voices .fv-swatch{width:28px;height:28px;min-height:28px;padding:0;border-radius:50%;border:3px solid transparent}
+#four-voices .fv-swatch[data-color="yellow"]{background:#ffe566}
+#four-voices .fv-swatch[data-color="green"]{background:#8ed39a}
+#four-voices .fv-swatch[data-color="pink"]{background:#f7b4cb}
+#four-voices .fv-swatch[aria-pressed="true"]{border-color:#29332e}
+#four-voices .fv-confirm{display:inline-flex;flex-wrap:wrap;align-items:center;gap:6px;background:#fff7ea;border:1px solid #eac1ad;border-radius:12px;padding:6px 8px;font-size:16px}
+#four-voices .fv-confirm button{background:#bbd3c5;color:#29332e;border:0;border-radius:999px;min-height:36px;padding:6px 10px}
+#four-voices .fv-readbar{display:flex;justify-content:flex-start;margin:0 0 8px}
+#four-voices .fv-mark{background:rgba(255,214,60,.55);color:inherit;border-radius:.12em;padding:0 .08em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+#four-voices .fv-mark[data-color="green"]{background:rgba(120,196,140,.55)}
+#four-voices .fv-mark[data-color="pink"]{background:rgba(244,154,186,.55)}
+#four-voices.fv-marking .fv-markable{cursor:text}
+#four-voices.fv-marking .fv-mark{cursor:pointer}
+
+#four-voices .fv-focus-layer[hidden]{display:none!important}
+#four-voices.fv-focus .fv-focus-layer{position:absolute;inset:0;z-index:6;display:flex;flex-direction:column;background:#1b2622;color:#f4f1ea}
+#four-voices .fv-focus-top{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:12px 16px;background:#16201c;border-bottom:1px solid rgba(255,255,255,.08)}
+#four-voices .fv-focus-meta{min-width:0}
+#four-voices .fv-focus-group{margin:0;font-size:16px;line-height:1.35;opacity:.85}
+#four-voices .fv-focus-progress{margin:2px 0 0;font-size:20px;font-weight:700}
+#four-voices .fv-focus-tools{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-inline-start:auto}
+#four-voices.fv-focus .fv-tool{background:transparent;color:#f4f1ea;border-color:rgba(255,255,255,.28)}
+#four-voices.fv-focus .fv-marker[aria-pressed="true"]{background:#ffe566;color:#1c2622;border-color:#ffe566}
+#four-voices.fv-focus .fv-tool[aria-pressed="true"]{background:#526d61;border-color:#526d61}
+#four-voices.fv-focus .fv-marker[aria-pressed="true"]{background:#ffe566;color:#1c2622;border-color:#ffe566}
+#four-voices.fv-focus .fv-font button{background:#31443c;color:#f4f1ea}
+#four-voices.fv-focus .fv-swatch[aria-pressed="true"]{border-color:#fff}
+#four-voices.fv-focus .fv-confirm{background:#24332d;color:#f4f1ea;border-color:rgba(255,255,255,.2)}
+#four-voices.fv-focus .fv-confirm button{background:#526d61;color:#fff}
+#four-voices .fv-edge{position:absolute;top:0;bottom:0;width:76px;z-index:2;border:0;background:transparent;color:#f4f1ea;font-size:54px;line-height:1}
+#four-voices .fv-edge-next{left:0}
+#four-voices .fv-edge-prev{right:0}
+#four-voices .fv-edge:disabled{opacity:.28}
+#four-voices .fv-focus-stage{flex:1;min-height:0;overflow:auto;display:flex;align-items:center;padding:16px 88px 32px}
+#four-voices .fv-focus-stage.is-all{align-items:flex-start}
+#four-voices .fv-focus-column{width:min(980px,100%);margin:auto}
+#four-voices .fv-focus-stage.is-all .fv-focus-column{display:flex;flex-direction:column;gap:28px}
+#four-voices .fv-focus-copy{margin:0;font-size:calc(clamp(24px,2.5vw,34px) * var(--fv-scale,1) * 1.5);line-height:1.7;text-align:start}
+#four-voices .fv-focus-card{margin:0;padding:8px 4px}
+#four-voices .fv-focus-card h3{margin:0 0 12px;color:#e7c7b4;font-size:calc(clamp(22px,2.2vw,30px) * var(--fv-scale,1) * 1.35);text-align:start}
+#four-voices .fv-focus-item.is-dim{opacity:.38}
+#four-voices .fv-focus-item.is-current{opacity:1}
+#four-voices.fv-focus .fv-mark{color:#1c2622}
+@media(max-width:700px){
+  #four-voices .fv-edge{width:46px;font-size:34px}
+  #four-voices .fv-focus-stage{padding:12px 50px 24px}
+  #four-voices .fv-focus-tools{margin-inline-start:0}
+  #four-voices .fv-focus-copy{font-size:calc(22px * var(--fv-scale,1) * 1.5)}
+}

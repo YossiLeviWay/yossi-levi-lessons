@@ -245,10 +245,10 @@
     schedule: F(`<rect x="160" y="40" width="320" height="280" rx="12" fill="#fff" stroke="${deep}" stroke-width="3"/>
       ${[0,1,2,3].map(i => `<rect x="190" y="${70+i*58}" width="70" height="44" rx="6" fill="${i%2?peach:sage}"/>
         <rect x="280" y="${82+i*58}" width="160" height="16" rx="4" fill="#e7efe8"/>`).join('')}`, 'לוח תמונות'),
-    methods: F([0,1,2,3].map(i => `
-      <rect x="${40+i*150}" y="90" width="130" height="160" rx="16" fill="${i%2?'#fff':'#e7efe8'}" stroke="${deep}"/>
-      <circle cx="${105+i*150}" cy="160" r="26" fill="${[peach,sage,peach,sage][i]}"/>
-    `).join(''), 'ארבע שיטות'),
+    methods: F([0,1,2].map(i => `
+      <rect x="${70+i*190}" y="90" width="160" height="160" rx="16" fill="${i%2?'#fff':'#e7efe8'}" stroke="${deep}"/>
+      <circle cx="${150+i*190}" cy="170" r="28" fill="${[peach,sage,peach][i]}"/>
+    `).join(''), 'שלוש שיטות'),
     arrows: F(person(300, 80, 1.3) +
       `<path d="M80 220 H240" stroke="${peach}" stroke-width="8"/>
        <path d="M560 220 H400" stroke="${sage}" stroke-width="8"/>

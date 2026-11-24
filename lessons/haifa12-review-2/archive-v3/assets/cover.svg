@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#f6f1e7"/>
+  <rect x="0" y="0" width="800" height="110" fill="#e7f0ea"/>
+  <text x="400" y="72" text-anchor="middle" fill="#29332e" font-family="Arial, sans-serif" font-size="42" font-weight="700" direction="rtl">מאיפה יצאנו</text>
+  <svg x="90" y="120" width="620" height="350" viewBox="0 0 640 360"><rect x="40" y="40" width="520" height="280" rx="16" fill="#d7e4dc"/><rect x="250" y="80" width="160" height="20" rx="6" fill="#e7b39a"/><circle cx="180" cy="180" r="28" fill="#f3d2b8"/><rect x="156" y="210" width="48" height="40" rx="8" fill="#7d9a86"/><circle cx="420" cy="190" r="22" fill="#f3d2b8"/><rect x="400" y="214" width="40" height="36" rx="8" fill="#e7b39a"/></svg>
+</svg>

@@ -1,0 +1,34 @@
+@font-face{font-family:Hebrew;src:url('../../../assets/hebrew.ttf') format('truetype');font-display:swap}
+*{box-sizing:border-box}
+html{direction:rtl}
+body{margin:0;background:#f6f8f6;color:#29332e;font-family:Hebrew,Arial,sans-serif;font-size:19px;line-height:1.5}
+a{color:#29332e}
+.top{background:#fff;border-bottom:1px solid #bbd3c5}
+.top-inner{max-width:900px;margin:auto;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.top img{width:140px;height:40px;object-fit:contain}
+.top a,.top button{background:#bbd3c5;color:#29332e;text-decoration:none;border:0;border-radius:999px;padding:8px 14px;font:inherit}
+.sheet{max-width:900px;margin:20px auto 48px;background:#fff;border-top:9px solid #bbd3c5;padding:28px 32px 48px}
+h1{font-size:clamp(32px,5vw,46px);line-height:1.25;margin:0}
+.kicker{color:#526d61;margin:0}
+.question{font-size:22px;background:#f8fbf9;border-right:6px solid #e07a52;padding:12px 14px;border-radius:12px}
+.field{display:flex;gap:8px;align-items:baseline;margin:8px 0}
+.field span{flex:none}
+.field input{flex:1;border:0;border-bottom:1px solid #8aa394;font:inherit;background:transparent;padding:4px}
+.station{margin-top:28px;padding-top:8px}
+.station h2{font-size:28px;margin:0 0 8px}
+.purpose,.howto{margin:6px 0}
+.lines{margin:8px 0 16px;background-image:repeating-linear-gradient(to bottom,transparent 0,transparent calc(1.5em - 1px),#c5d4cc calc(1.5em - 1px),#c5d4cc 1.5em);line-height:1.5;min-height:calc(6 * 1.5em)}
+textarea.answer{display:block;width:100%;border:0;resize:vertical;background:transparent;font:inherit;line-height:1.5;min-height:calc(6 * 1.5em);background-image:repeating-linear-gradient(to bottom,transparent 0,transparent calc(1.5em - 1px),#c5d4cc calc(1.5em - 1px),#c5d4cc 1.5em);background-attachment:local}
+.note{background:#f3f7f4;border-radius:12px;padding:12px 14px}
+.privacy{background:#fff6f0;border-right:5px solid #eac1ad;border-radius:12px;padding:12px 14px}
+@media(max-width:700px){.sheet{margin:0;padding:18px 14px 36px}.field{display:block}}
+@page{size:A4;margin:14mm}
+@media print{
+  body{background:#fff;font-size:12.5pt}
+  .top,.no-print{display:none!important}
+  .sheet{max-width:none;margin:0;border:0;padding:0}
+  .station,.closer{break-before:page}
+  h1,h2,p{break-after:avoid}
+  textarea.answer{overflow:hidden}
+  a{text-decoration:none}
+}

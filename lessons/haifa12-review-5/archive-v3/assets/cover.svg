@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#f6f1e7"/>
+  <rect x="0" y="0" width="800" height="110" fill="#e7f0ea"/>
+  <text x="400" y="72" text-anchor="middle" fill="#29332e" font-family="Arial, sans-serif" font-size="42" font-weight="700" direction="rtl">סביב השולחן</text>
+  <svg x="90" y="120" width="620" height="350" viewBox="0 0 640 360"><ellipse cx="320" cy="160" rx="200" ry="90" fill="#efe6d4" stroke="#526d61" stroke-width="4"/><circle cx="220" cy="120" r="16" fill="#e7b39a"/><circle cx="320" cy="100" r="16" fill="#7d9a86"/><circle cx="420" cy="120" r="16" fill="#e7b39a"/><rect x="450" y="180" width="28" height="22" rx="4" fill="#7d9a86"/></svg>
+</svg>

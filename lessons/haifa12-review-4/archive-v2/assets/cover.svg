@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#f6f1e7"/>
+  <rect x="0" y="0" width="800" height="110" fill="#e7f0ea"/>
+  <text x="400" y="72" text-anchor="middle" fill="#29332e" font-family="Arial, sans-serif" font-size="42" font-weight="700" direction="rtl">מאחורי ההתנהגות</text>
+  <svg x="90" y="120" width="620" height="350" viewBox="0 0 640 360"><path d="M0 120 H640" stroke="#7d9a86" stroke-width="4"/><path d="M220 120 L320 20 L420 120 Z" fill="#fff" stroke="#526d61"/><path d="M140 120 L320 280 L500 120 Z" fill="#d5e6dc"/></svg>
+</svg>

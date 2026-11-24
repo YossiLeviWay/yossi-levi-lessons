@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="הדרך שלי בקורס">
+  <rect width="800" height="500" fill="#f3f7f4"/>
+  <rect width="800" height="16" fill="#bbd3c5"/>
+  <path d="M70 390 C 170 390 190 150 320 170 C 460 192 470 390 620 250 C 690 185 700 120 740 110" fill="none" stroke="#eac1ad" stroke-width="22" stroke-linecap="round"/>
+  <path d="M70 390 C 170 390 190 150 320 170 C 460 192 470 390 620 250 C 690 185 700 120 740 110" fill="none" stroke="#e07a52" stroke-width="6" stroke-linecap="round"/>
+  <g fill="#526d61" font-family="Arial, sans-serif" font-size="15" text-anchor="middle">
+    <circle cx="70" cy="390" r="16" fill="#fff" stroke="#526d61" stroke-width="4"/>
+    <circle cx="250" cy="230" r="16" fill="#fff" stroke="#526d61" stroke-width="4"/>
+    <circle cx="400" cy="250" r="16" fill="#fff" stroke="#526d61" stroke-width="4"/>
+    <circle cx="560" cy="340" r="16" fill="#fff" stroke="#526d61" stroke-width="4"/>
+    <circle cx="740" cy="110" r="22" fill="#e07a52" stroke="#fff" stroke-width="4"/>
+  </g>
+  <text x="64" y="92" fill="#29332e" font-family="Arial, sans-serif" font-size="64" font-weight="700">הדרך שלי</text>
+  <text x="64" y="156" fill="#526d61" font-family="Arial, sans-serif" font-size="36">בקורס · חיפה 12</text>
+</svg>

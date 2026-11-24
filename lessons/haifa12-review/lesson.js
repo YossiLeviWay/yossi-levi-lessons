@@ -21,6 +21,8 @@
       if (b.type === 'video') return '<div class="video-frame"><iframe src="https://www.youtube.com/embed/' + e(b.id) + '" title="' + e(b.title) + '" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><p class="video-link"><a href="' + e(b.href) + '" target="_blank" rel="noopener">' + e(b.label) + '</a></p>';
       if (b.type === 'button') return '<p class="slide-action"><button type="button" data-open-stories>' + e(b.label) + '</button></p>';
       if (b.type === 'link') return '<p class="slide-action"><a class="assignment-link" href="' + e(b.href) + '">' + e(b.label) + '</a></p>';
+      if (b.type === 'examples') return '<div class="example-grid">' + b.items.map(t => '<section><h2>' + e(t.h) + '</h2><p>' + e(t.p) + '</p></section>').join('') + '</div>';
+      if (b.type === 'lenses') return '<ol class="lens-row">' + b.items.map((t, i) => '<li><span class="num">' + (i + 1) + '</span><span>' + e(t) + '</span></li>').join('') + '</ol>';
       return '';
     }).join('');
   }

@@ -7,9 +7,40 @@
   let index = 0, enabled = false, scale = 100;
   const art = name => (window.HAI_ART && window.HAI_ART[name]) || '';
 
+  const icon = name => {
+    const paths = {
+      ask: '<circle cx="13" cy="13" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M18 18 l7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>',
+      learn: '<path d="M6 10 h20 v12 H6z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 10 V8 h12 v2" fill="none" stroke="currentColor" stroke-width="2"/>',
+      house: '<path d="M6 16 L16 7 l10 9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 15 v9 h14 v-9" fill="none" stroke="currentColor" stroke-width="2"/>',
+      talk: '<circle cx="11" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="21" cy="13" r="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 24 q6-6 12 0 M16 23 q4-4 9 0" fill="none" stroke="currentColor" stroke-width="2"/>',
+      shape: '<path d="M8 24 q8-16 16 0" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="10" r="3" fill="currentColor"/>',
+      pack: '<rect x="8" y="12" width="16" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 12 v-3 h8 v3" fill="none" stroke="currentColor" stroke-width="2"/>',
+      ramp: '<path d="M6 24 h20 M6 24 L22 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>',
+      grid: '<rect x="7" y="8" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M7 14 h18 M16 8 v16" stroke="currentColor" stroke-width="2"/>',
+      play: '<circle cx="16" cy="16" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 13 l6 3-6 3z" fill="currentColor"/>',
+      steps: '<path d="M7 24 h6 v-5 h6 v-5 h6" fill="none" stroke="currentColor" stroke-width="2"/>',
+      bell: '<path d="M10 20 h12 l-2-8 a4 4 0 0 0-8 0z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 22 h4" stroke="currentColor" stroke-width="2"/>',
+      ring: '<circle cx="12" cy="16" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="16" r="4" fill="none" stroke="currentColor" stroke-width="2"/>',
+      heart: '<path d="M16 24 l-7-7 a4 4 0 0 1 7-4 a4 4 0 0 1 7 4z" fill="none" stroke="currentColor" stroke-width="2"/>',
+      flame: '<path d="M16 6 q6 8 2 12 q4 1 2 6 q-8 2-8-5 q-2-4 4-13z" fill="none" stroke="currentColor" stroke-width="2"/>',
+      family: '<circle cx="16" cy="9" r="3" fill="currentColor"/><circle cx="8" cy="13" r="2.5" fill="currentColor"/><path d="M4 24 q4-6 8 0 M12 24 q4-8 8 0" fill="none" stroke="currentColor" stroke-width="2"/>'
+    };
+    return `<svg class="tool-svg" viewBox="0 0 32 32">${paths[name] || paths.ask}</svg>`;
+  };
+
+  function toolbox(s) {
+    const tools = s.toolbox || [];
+    if (!tools.length) return '';
+    const buttons = tools.map((t, i) =>
+      `<button type="button" class="tool" data-act="tool" data-tool="${i}" aria-pressed="false"><span class="tool-icon" aria-hidden="true">${icon(t.icon)}</span><span class="tool-name">${e(t.name)}</span></button>`
+    ).join('');
+    return `<div class="toolbox"><div class="toolbox-lid" aria-hidden="true"></div><div class="toolbox-box" role="group" aria-label="כלים בארגז">${buttons}</div><p class="tool-out" data-tool-out aria-live="polite">לחצי על כלי. תופיע שאלה שמזכירה מה למדנו.</p></div>`;
+  }
+
   function blocks(s) {
     const bits = [];
-    if (s.photo) bits.push(`<img class="photo" src="${e(s.photo)}" alt="${e(s.alt || '')}">`);
+    if (s.toolbox) bits.push(toolbox(s));
+    else if (s.photo) bits.push(`<img class="photo" src="${e(s.photo)}" alt="${e(s.alt || '')}">`);
     else if (s.art) bits.push(art(s.art));
     if (s.lead) bits.push(`<p class="lead">${e(s.lead)}</p>`);
     if (s.statement) bits.push(`<p class="statement">${e(s.statement)}</p>`);
@@ -104,7 +135,29 @@
       const id = (frame.getAttribute('src') || '').split('/').pop().split('?')[0];
       frame.src = 'https://www.youtube.com/embed/' + id + '?start=190&rel=0';
       btn.hidden = true;
+    } else if (act === 'tool') {
+      const i = Number(slide.id.replace('slide-', '')) - 1;
+      const tool = (d.slides[i].toolbox || [])[Number(btn.dataset.tool)];
+      if (!tool) return;
+      slide.querySelectorAll('.tool').forEach(b => b.setAttribute('aria-pressed', 'false'));
+      btn.setAttribute('aria-pressed', 'true');
+      slide.querySelector('[data-tool-out]').textContent = tool.q;
     }
+  });
+  stage.addEventListener('keydown', ev => {
+    const tool = ev.target.closest && ev.target.closest('.tool');
+    if (!tool) return;
+    const tools = [...tool.closest('.toolbox').querySelectorAll('.tool')];
+    const i = tools.indexOf(tool);
+    let n = i;
+    if (ev.key === 'ArrowLeft' || ev.key === 'ArrowDown') n = Math.min(tools.length - 1, i + 1);
+    else if (ev.key === 'ArrowRight' || ev.key === 'ArrowUp') n = Math.max(0, i - 1);
+    else if (ev.key === 'Home') n = 0;
+    else if (ev.key === 'End') n = tools.length - 1;
+    else return;
+    ev.preventDefault();
+    ev.stopPropagation();
+    tools[n].focus();
   });
   document.addEventListener('keydown', ev => {
     if (document.querySelector('dialog[open]') || ['INPUT', 'TEXTAREA', 'BUTTON'].includes(ev.target.tagName)) return;

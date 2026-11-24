@@ -1,9 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
-  <rect width="800" height="500" fill="#f3f7f4"/>
-  <rect width="800" height="16" fill="#bbd3c5"/>
-  <path d="M80 400 C 180 400 220 180 360 200 C 500 220 520 360 700 140" fill="none" stroke="#eac1ad" stroke-width="22" stroke-linecap="round"/>
-  <path d="M80 400 C 180 400 220 180 360 200 C 500 220 520 360 700 140" fill="none" stroke="#e07a52" stroke-width="6" stroke-linecap="round"/>
-  <circle cx="700" cy="140" r="22" fill="#e07a52"/>
-  <text x="740" y="90" text-anchor="end" fill="#29332e" font-family="Arial, sans-serif" font-size="54" font-weight="700" direction="rtl">רגעים קשים</text>
-  <text x="740" y="140" text-anchor="end" fill="#526d61" font-family="Arial, sans-serif" font-size="28" direction="rtl">חיפה 12</text>
+  <rect width="800" height="500" fill="#f6f1e7"/>
+  <rect x="0" y="0" width="800" height="110" fill="#e7f0ea"/>
+  <text x="400" y="72" text-anchor="middle" fill="#29332e" font-family="Arial, sans-serif" font-size="42" font-weight="700" direction="rtl">לראות את הילד גדל</text>
+  <svg x="90" y="120" width="620" height="350" viewBox="0 0 640 360"><rect x="80" y="40" width="16" height="260" fill="#526d61"/><circle cx="88" cy="80" r="18" fill="#e7b39a"/><circle cx="88" cy="160" r="18" fill="#7d9a86"/><circle cx="88" cy="240" r="18" fill="#e7b39a"/><circle cx="220" cy="200" r="26" fill="#f3d2b8"/><rect x="196" y="228" width="48" height="50" rx="8" fill="#7d9a86"/></svg>
 </svg>
